@@ -27,7 +27,19 @@ optional string subtitle-11:
 optional string link-11:
 optional string subtitle-12:
 optional string link-12:
-
+boolean $isHovered-1: false
+boolean $isHovered-2: false
+boolean $isHovered-3: false
+boolean $isHovered-4: false
+boolean $isHovered-5: false
+boolean $isHovered-6: false
+boolean $isHovered-7: false
+boolean $isHovered-8: false
+boolean $isHovered-9: false
+boolean $isHovered-10: false
+boolean $isHovered-11: false
+boolean $isHovered-12: false
+ftd.type-data types: $Caveat-Typography.types
 
 ;;---------------------Footer column---------------------
 -- ftd.column:
@@ -52,7 +64,7 @@ align-content: center
 -- ftd.text: $wrapper.heading-1
 if: {$wrapper.heading-1 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.copy-small
+role: $inherited.types.heading-small
 text-align: center
 padding-bottom.px: 20
 style: bold
@@ -64,6 +76,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-1 != NULL}
 link: $wrapper.link-1
+color if {$wrapper.isHovered-1}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-1, v = false)
 
 -- ftd.text: $wrapper.subtitle-2
 if: {$wrapper.subtitle-2 != NULL}
@@ -72,6 +87,10 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-2 != NULL}
 link: $wrapper.link-2
+color if {$wrapper.isHovered-2}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-2, v = false)
+
 
 -- ftd.text: $wrapper.subtitle-3
 if: {$wrapper.subtitle-3 != NULL}
@@ -80,6 +99,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-3 != NULL}
 link: $wrapper.link-3
+color if {$wrapper.isHovered-3}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-3, v = false)
 
 -- ftd.text: $wrapper.subtitle-4
 if: {$wrapper.subtitle-4 != NULL}
@@ -88,6 +110,10 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-4 != NULL}
 link: $wrapper.link-4
+color if {$wrapper.isHovered-4}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-4, v = false)
+
 
 -- end: ftd.column
 
@@ -96,7 +122,7 @@ link: $wrapper.link-4
 -- ftd.text: $wrapper.heading-2
 if: {$wrapper.heading-2 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.copy-small
+role: $inherited.types.heading-small
 text-align: center
 padding-bottom.px: 20
 style: bold
@@ -108,6 +134,10 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-5 != NULL}
 link: $wrapper.link-5
+color if {$wrapper.isHovered-1}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-5, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-5, v = false)
+
 
 -- ftd.text: $wrapper.subtitle-6
 if: {$wrapper.subtitle-6 != NULL}
@@ -116,6 +146,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-6 != NULL}
 link: $wrapper.link-6
+color if {$wrapper.isHovered-6}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-6, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-6, v = false)
 
 -- ftd.text: $wrapper.subtitle-7
 if: {$wrapper.subtitle-7 != NULL}
@@ -124,6 +157,10 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-7 != NULL}
 link: $wrapper.link-7
+color if {$wrapper.isHovered-7}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-7, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-7, v = false)
+
 
 -- ftd.text: $wrapper.subtitle-8
 if: {$wrapper.subtitle-8 != NULL}
@@ -132,6 +169,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-8 != NULL}
 link: $wrapper.link-8
+color if {$wrapper.isHovered-8}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-8, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-8, v = false)
 
 -- end: ftd.column
 
@@ -140,7 +180,7 @@ link: $wrapper.link-8
 -- ftd.text: $wrapper.heading-3
 if: {$wrapper.heading-3 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.copy-small
+role: $inherited.types.heading-small
 text-align: center
 padding-bottom.px: 20
 style: bold
@@ -152,6 +192,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-9 != NULL}
 link: $wrapper.link-9
+color if {$wrapper.isHovered-9}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-9, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-9, v = false)
 
 -- ftd.text: $wrapper.subtitle-10
 if: {$wrapper.subtitle-10 != NULL}
@@ -160,6 +203,10 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-10 != NULL}
 link: $wrapper.link-10
+color if {$wrapper.isHovered-10}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-10, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-10, v = false)
+
 
 -- ftd.text: $wrapper.subtitle-11
 if: {$wrapper.subtitle-11 != NULL}
@@ -168,6 +215,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-11 != NULL}
 link: $wrapper.link-11
+color if {$wrapper.isHovered-11}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-11, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-11, v = false)
 
 -- ftd.text: $wrapper.subtitle-12
 if: {$wrapper.subtitle-12 != NULL}
@@ -176,6 +226,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-12 != NULL}
 link: $wrapper.link-12
+color if {$wrapper.isHovered-12}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-12, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-12, v = false)
 
 -- end: ftd.column
 
@@ -196,7 +249,7 @@ align-content: center
 -- ftd.text: $wrapper.heading-1
 if: {$wrapper.heading-1 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.copy-small
+role: $inherited.types.heading-small
 text-align: center
 padding-bottom.px: 10
 style: bold
@@ -208,6 +261,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-1 != NULL}
 link: $wrapper.link-1
+color if {$wrapper.isHovered-1}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-1, v = false)
 
 -- ftd.text: $wrapper.subtitle-2
 if: {$wrapper.subtitle-2 != NULL}
@@ -216,6 +272,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-2 != NULL}
 link: $wrapper.link-2
+color if {$wrapper.isHovered-2}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-2, v = false)
 
 -- ftd.text: $wrapper.subtitle-3
 if: {$wrapper.subtitle-3 != NULL}
@@ -224,6 +283,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-3 != NULL}
 link: $wrapper.link-3
+color if {$wrapper.isHovered-3}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-3, v = false)
 
 -- ftd.text: $wrapper.subtitle-4
 if: {$wrapper.subtitle-4 != NULL}
@@ -232,6 +294,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-4 != NULL}
 link: $wrapper.link-4
+color if {$wrapper.isHovered-4}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-4, v = false)
 
 -- end: ftd.column
 
@@ -240,7 +305,7 @@ link: $wrapper.link-4
 -- ftd.text: $wrapper.heading-2
 if: {$wrapper.heading-2 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.copy-small
+role: $inherited.types.heading-small
 text-align: center
 padding-bottom.px: 10
 style: bold
@@ -252,6 +317,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-5 != NULL}
 link: $wrapper.link-5
+color if {$wrapper.isHovered-5}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-5, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-5, v = false)
 
 -- ftd.text: $wrapper.subtitle-6
 if: {$wrapper.subtitle-6 != NULL}
@@ -260,6 +328,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-6 != NULL}
 link: $wrapper.link-6
+color if {$wrapper.isHovered-6}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-6, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-6, v = false)
 
 -- ftd.text: $wrapper.subtitle-7
 if: {$wrapper.subtitle-7 != NULL}
@@ -268,6 +339,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-7 != NULL}
 link: $wrapper.link-7
+color if {$wrapper.isHovered-7}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-7, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-7, v = false)
 
 -- ftd.text: $wrapper.subtitle-8
 if: {$wrapper.subtitle-8 != NULL}
@@ -276,6 +350,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-8 != NULL}
 link: $wrapper.link-8
+color if {$wrapper.isHovered-8}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-8, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-8, v = false)
 
 -- end: ftd.column
 
@@ -284,7 +361,7 @@ link: $wrapper.link-8
 -- ftd.text: $wrapper.heading-3
 if: {$wrapper.heading-3 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.copy-small
+role: $inherited.types.heading-small
 text-align: center
 padding-bottom.px: 10
 style: bold
@@ -296,6 +373,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-9 != NULL}
 link: $wrapper.link-9
+color if {$wrapper.isHovered-9}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-9, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-9, v = false)
 
 -- ftd.text: $wrapper.subtitle-10
 if: {$wrapper.subtitle-10 != NULL}
@@ -304,6 +384,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-10 != NULL}
 link: $wrapper.link-10
+color if {$wrapper.isHovered-10}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-10, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-10, v = false)
 
 -- ftd.text: $wrapper.subtitle-11
 if: {$wrapper.subtitle-11 != NULL}
@@ -312,6 +395,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-11 != NULL}
 link: $wrapper.link-11
+color if {$wrapper.isHovered-11}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-11, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-11, v = false)
 
 -- ftd.text: $wrapper.subtitle-12
 if: {$wrapper.subtitle-12 != NULL}
@@ -320,6 +406,9 @@ color: $inherited.colors.text-strong
 role: $inherited.types.copy-small
 if: {$wrapper.link-12 != NULL}
 link: $wrapper.link-12
+color if {$wrapper.isHovered-12}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-12, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-12, v = false)
 
 -- end: ftd.column
 
