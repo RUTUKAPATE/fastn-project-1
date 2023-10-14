@@ -1,5 +1,3 @@
--- import: rutukapate.github.io/fastn-project-1/components/dropdown
-
 -- component wrapper:
 string title:
 string title-link:
@@ -13,10 +11,35 @@ optional string navlink-4:
 optional string link-4:
 optional string navlink-5:
 optional string link-5:
-optional string navlink-6:
-optional string link-6:
+optional string dropdown:
+optional string sub-navlink-1:
+optional string sublink-1:
+optional string sub-navlink-2:
+optional string sublink-2:
+optional string sub-navlink-3:
+optional string sublink-3:
+optional string sub-navlink-4:
+optional string sublink-4:
+optional string sub-navlink-5:
+optional string sublink-5:
+optional string sub-navlink-6:
+optional string sublink-6:
+boolean $isHovered-1: false
+boolean $isHovered-2: false
+boolean $isHovered-3: false
+boolean $isHovered-4: false
+boolean $isHovered-5: false
+boolean $isHovered-6: false
+boolean $isHover-1: false
+boolean $isHover-2: false
+boolean $isHover-3: false
+boolean $isHover-4: false
+boolean $isHover-5: false
+boolean $isHover-6: false
 optional boolean $on-click: false
+optional boolean $on-click-mob: false
 optional string theme: light
+ftd.type-data types: $Caveat-Typography.types    
 
 -- ftd.row:
 height: fill-container
@@ -34,7 +57,7 @@ z-index: 1000
 ;;----------------------Title-----------------------
 -- ftd.text: $wrapper.title
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-large
 cursor: pointer
 link: $wrapper.title-link
 
@@ -42,53 +65,145 @@ link: $wrapper.title-link
 -- ftd.row:
 height: fill-container
 spacing.fixed.px: 40
+z-index: 1000
 
 -- ftd.text: $wrapper.navlink-1
 if: {$wrapper.navlink-1 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-medium
 cursor: pointer
 link: $wrapper.link-1
+color if {$wrapper.isHover-1}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-1, v = false)
 
 -- ftd.text: $wrapper.navlink-2
-if: {$wrapper.navlink-3 != NULL}
+if: {$wrapper.navlink-2 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-medium
 cursor: pointer
 link: $wrapper.link-2
+color if {$wrapper.isHover-2}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-2, v = false)
 
--- dropdown.drop-down-1:
-;;width.fixed.px: 200
-;;placeholder: Select Item
-possibleValues: $egValues 
+-- ftd.column:
+
+-- ftd.text: $wrapper.dropdown
+if: {$wrapper.dropdown != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-medium
+cursor: pointer
+$on-click$: $ftd.toggle($a = $wrapper.on-click)
+id: dropdown
+color if {$wrapper.isHover-3}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-3, v = false)
+
+-- ftd.column:
+anchor.id: dropdown
+background.solid: $inherited.colors.background.base
+spacing.fixed.px: 10
+padding.px: 10
+anchor: window
+if: {$wrapper.on-click}
+overflow-y: scroll
+overflow-x: hidden
+height.fixed.px: 150
+
+-- ftd.text: $wrapper.sub-navlink-1
+if: {$wrapper.sub-navlink-1 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-1
+background.solid if {$wrapper.isHovered-1}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-1, v = false)
+
+-- ftd.text: $wrapper.sub-navlink-2
+if: {$wrapper.sub-navlink-2 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-2
+background.solid if {$wrapper.isHovered-2}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-2, v = false)
+
+-- ftd.text: $wrapper.sub-navlink-3
+if: {$wrapper.sub-navlink-3 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-3
+background.solid if {$wrapper.isHovered-3}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-3, v = false)
+
+-- ftd.text: $wrapper.sub-navlink-4
+if: {$wrapper.sub-navlink-4 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-4
+background.solid if {$wrapper.isHovered-4}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-4, v = false)
+
+-- ftd.text: $wrapper.sub-navlink-5
+if: {$wrapper.sub-navlink-5 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-5
+background.solid if {$wrapper.isHovered-5}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-5, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-5, v = false)
+
+-- ftd.text: $wrapper.sub-navlink-6
+if: {$wrapper.sub-navlink-6 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-6
+background.solid if {$wrapper.isHovered-6}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-6, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-6, v = false)
+
+-- end: ftd.column
+
+-- end: ftd.column
 
 -- ftd.text: $wrapper.navlink-3
 if: {$wrapper.navlink-3 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-medium
 cursor: pointer
 link: $wrapper.link-3
+color if {$wrapper.isHover-4}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-4, v = false)
 
 -- ftd.text: $wrapper.navlink-4
 if: {$wrapper.navlink-4 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-medium
 cursor: pointer
 link: $wrapper.link-4
+color if {$wrapper.isHover-5}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-5, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-5, v = false)
 
 -- ftd.text: $wrapper.navlink-5
 if: {$wrapper.navlink-5 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-medium
 cursor: pointer
 link: $wrapper.link-5
-
--- ftd.text: $wrapper.navlink-6
-if: {$wrapper.navlink-6 != NULL}
-color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
-cursor: pointer
-link: $wrapper.link-6
+color if {$wrapper.isHover-6}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-6, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-6, v = false)
 
 -- end: ftd.row
 
@@ -107,9 +222,6 @@ id: mobile-nav
 height.fixed.px: 80
 width: fill-container
 padding.px: 40
-spacing.fixed.px: 300
-z-index: 1000
-
 
 ;;----------------------------Hamburger menu------------------------
 -- ftd.image:
@@ -123,35 +235,20 @@ top.px: 40
 left.px: 25
 $on-click$: $ftd.toggle($a = $wrapper.on-click)
 
-;;-----------------------Title------------------------
--- ftd.text: $wrapper.title
-color: $inherited.colors.text-strong
-role: $inherited.types.heading-medium
-cursor: pointer
-text-align: center
-width: fill-container
-link: $wrapper.title-link
-
-
 ;;----------------------------Navlinks-----------------------
 -- ftd.column:
 id: mobile-navlinks
-height.fixed.vh: 100
+height: hug-content
 width: fill-container
 background.solid: $inherited.colors.background.base
 spacing.fixed.px: 40
 padding.px: 40
 anchor: window
-top.px: 0
-left.px: 0
-z-index: 9999
 if: {$wrapper.on-click}
-
 
 ;;----------------------------Close button Container--------------
 -- ftd.row:
 width: fill-container
-
 
 ;;--------------------------Close button image----------------------
 -- ftd.image:
@@ -171,47 +268,153 @@ $on-click$: $ftd.toggle($a = $wrapper.on-click)
 -- ftd.text: $wrapper.navlink-1
 if: {$wrapper.navlink-1 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-small
 cursor: pointer
 link: $wrapper.link-1
+color if {$wrapper.isHover-1}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-1, v = false)
 
 -- ftd.text: $wrapper.navlink-2
 if: {$wrapper.navlink-2 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-small
 cursor: pointer
 link: $wrapper.link-2
+color if {$wrapper.isHover-2}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-2, v = false)
 
 -- ftd.text: $wrapper.navlink-3
 if: {$wrapper.navlink-3 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-small
 cursor: pointer
 link: $wrapper.link-3
+color if {$wrapper.isHover-3}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-3, v = false)
 
 -- ftd.text: $wrapper.navlink-4
 if: {$wrapper.navlink-4 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-small
 cursor: pointer
 link: $wrapper.link-4
+color if {$wrapper.isHover-4}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-4, v = false)
 
 -- ftd.text: $wrapper.navlink-5
 if: {$wrapper.navlink-5 != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-small
 cursor: pointer
 link: $wrapper.link-5
+color if {$wrapper.isHover-5}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-5, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-5, v = false)
 
--- ftd.text: $wrapper.navlink-6
-if: {$wrapper.navlink-6 != NULL}
+-- ftd.column:
+
+-- ftd.text: $wrapper.dropdown
+if: {$wrapper.dropdown != NULL}
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-small
 cursor: pointer
-link: $wrapper.link-6
+$on-click$: $ftd.toggle($a = $wrapper.on-click-mob)
+id: mobile-dropdown
+color if {$wrapper.isHover-3}: $inherited.colors.text
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover-3, v = false)
+
+-- ftd.column:
+anchor.id: mobile-dropdown
+background.solid: $inherited.colors.background.base
+spacing.fixed.px: 10
+padding.px: 10
+anchor: window
+if: {$wrapper.on-click-mob}
+overflow-y: scroll
+overflow-x: hidden
+height.fixed.px: 150
+
+-- ftd.text: $wrapper.sub-navlink-1
+if: {$wrapper.sub-navlink-1 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-1
+background.solid if {$wrapper.isHovered-1}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-1, v = false)
+
+-- ftd.text: $wrapper.sub-navlink-2
+if: {$wrapper.sub-navlink-2 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-2
+background.solid if {$wrapper.isHovered-2}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-2, v = false)
+
+-- ftd.text: $wrapper.sub-navlink-3
+if: {$wrapper.sub-navlink-3 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-3
+background.solid if {$wrapper.isHovered-3}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-3, v = false)
+
+-- ftd.text: $wrapper.sub-navlink-4
+if: {$wrapper.sub-navlink-4 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-4
+background.solid if {$wrapper.isHovered-4}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-4, v = false)
+
+-- ftd.text: $wrapper.sub-navlink-5
+if: {$wrapper.sub-navlink-5 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-5
+background.solid if {$wrapper.isHovered-5}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-5, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-5, v = false)
+
+-- ftd.text: $wrapper.sub-navlink-6
+if: {$wrapper.sub-navlink-6 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-small
+cursor: pointer
+link: $wrapper.sublink-6
+background.solid if {$wrapper.isHovered-6}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHovered-6, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHovered-6, v = false)
 
 -- end: ftd.column
+
+-- end: ftd.column
+
 ;;-------------------------END OF NAVLINKS------------------
+
+-- end: ftd.column
+
+;;-----------------------Title------------------------
+-- ftd.text: $wrapper.title
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-medium
+cursor: pointer
+text-align: center
+width: fill-container
+link: $wrapper.title-link
 
 -- end: ftd.row
 
@@ -220,20 +423,3 @@ link: $wrapper.link-6
 -- end: ftd.row
 
 -- end: wrapper
-
--- string list egValues:
-
--- string: Item-1
--- string: Item-2
--- string: Item-3
--- string: Item-4
--- string: Item-5
--- string: Item-6
--- string: Item-7
--- string: Item-8
--- string: Item-9
--- string: Item-10
--- string: Item-11
--- string: Item-12
-
--- end: egValues

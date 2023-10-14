@@ -2,6 +2,7 @@
 -- import: rutukapate.github.io/fastn-project-1/common/navbar
 -- import: rutukapate.github.io/fastn-project-1/common/footer
 -- import: rutukapate.github.io/fastn-project-1/utils/animation
+-- import: rutukapate.github.io/Caveat-Typography
 
 -- component page:
 children uis:
@@ -10,6 +11,7 @@ optional string smooth-scroll: true
 optional integer x: $animation.start(overflowX = $page.overflow-x, smoothScroll = $page.smooth-scroll)
 
 -- ftd.column:
+types: $Caveat-Typography.types
 height: fill-container
 width: fill-container
 background.solid: $inherited.colors.background.base
@@ -37,6 +39,17 @@ navlink-1: Portfolio
 link-1: /
 navlink-2: Single
 link-2: /
+dropdown: Dropdown
+sub-navlink-1: Item-1
+sublink-1: /
+sub-navlink-2: Item-2
+sublink-2: /
+sub-navlink-3: Item-3
+sublink-3: /
+sub-navlink-4: Item-4
+sublink-4: /
+sub-navlink-5: Item-5
+sublink-5: /
 navlink-3: Contact
 link-3: /
 theme: light

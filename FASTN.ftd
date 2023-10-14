@@ -4,8 +4,9 @@
 favicon: /-/rutukapate.github.io/fastn-project-1/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
+-- fastn.dependency: rutukapate.github.io/Caveat-Typography
 
 
 -- fastn.auto-import: rutukapate.github.io/fastn-project-1/assets
 -- fastn.auto-import: rutukapate.github.io/fastn-project-1/FASTN/ds
-
+-- fastn.auto-import: rutukapate.github.io/Caveat-Typography

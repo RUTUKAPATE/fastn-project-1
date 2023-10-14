@@ -28,7 +28,7 @@ classes: wow, zoomInDown
 
 -- ftd.text: $wrapper.subtitle
 if: { $wrapper.subtitle != NULL }
-role: $inherited.types.copy-regular
+role: $inherited.types.heading-medium
 color: #6c6f8a
 classes: wow, zoomInDown
 
@@ -54,7 +54,7 @@ classes: wow, bounceIn
 
 -- ftd.text: $wrapper.subtitle
 if: { $wrapper.subtitle != NULL }
-role: $inherited.types.copy-regular
+role: $inherited.types.heading-small
 color: #6c6f8a
 classes: wow, bounceIn
 
