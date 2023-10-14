@@ -1,0 +1,348 @@
+-- component wrapper:
+string copywrite: 
+optional string heading-1:
+optional string subtitle-1:
+optional string link-1:
+optional string subtitle-2:
+optional string link-2:
+optional string subtitle-3:
+optional string link-3:
+optional string subtitle-4:
+optional string link-4:
+optional string heading-2:
+optional string subtitle-5:
+optional string link-5:
+optional string subtitle-6:
+optional string link-6:
+optional string subtitle-7:
+optional string link-7:
+optional string subtitle-8:
+optional string link-8:
+optional string heading-3:
+optional string subtitle-9:
+optional string link-9:
+optional string subtitle-10:
+optional string link-10:
+optional string subtitle-11:
+optional string link-11:
+optional string subtitle-12:
+optional string link-12:
+
+
+;;---------------------Footer column---------------------
+-- ftd.column:
+height: fill-container
+width: fill-container
+border-top-width.px: 1
+border-color: rgb(30, 41, 59)
+padding-vertical.rem: 2
+padding-horizontal.rem: 2.5
+spacing.fixed.px: 20
+
+-- ftd.desktop:
+
+-- ftd.row: 
+height: fill-container
+width: fill-container
+spacing.fixed.px: 70
+align-content: center
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.heading-1
+if: {$wrapper.heading-1 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+text-align: center
+padding-bottom.px: 20
+style: bold
+
+-- ftd.text: $wrapper.subtitle-1
+if: {$wrapper.subtitle-1 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-1 != NULL}
+link: $wrapper.link-1
+
+-- ftd.text: $wrapper.subtitle-2
+if: {$wrapper.subtitle-2 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-2 != NULL}
+link: $wrapper.link-2
+
+-- ftd.text: $wrapper.subtitle-3
+if: {$wrapper.subtitle-3 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-3 != NULL}
+link: $wrapper.link-3
+
+-- ftd.text: $wrapper.subtitle-4
+if: {$wrapper.subtitle-4 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-4 != NULL}
+link: $wrapper.link-4
+
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.heading-2
+if: {$wrapper.heading-2 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+text-align: center
+padding-bottom.px: 20
+style: bold
+
+-- ftd.text: $wrapper.subtitle-5
+if: {$wrapper.subtitle-5 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-5 != NULL}
+link: $wrapper.link-5
+
+-- ftd.text: $wrapper.subtitle-6
+if: {$wrapper.subtitle-6 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-6 != NULL}
+link: $wrapper.link-6
+
+-- ftd.text: $wrapper.subtitle-7
+if: {$wrapper.subtitle-7 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-7 != NULL}
+link: $wrapper.link-7
+
+-- ftd.text: $wrapper.subtitle-8
+if: {$wrapper.subtitle-8 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-8 != NULL}
+link: $wrapper.link-8
+
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.heading-3
+if: {$wrapper.heading-3 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+text-align: center
+padding-bottom.px: 20
+style: bold
+
+-- ftd.text: $wrapper.subtitle-9
+if: {$wrapper.subtitle-9 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-9 != NULL}
+link: $wrapper.link-9
+
+-- ftd.text: $wrapper.subtitle-10
+if: {$wrapper.subtitle-10 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-10 != NULL}
+link: $wrapper.link-10
+
+-- ftd.text: $wrapper.subtitle-11
+if: {$wrapper.subtitle-11 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-11 != NULL}
+link: $wrapper.link-11
+
+-- ftd.text: $wrapper.subtitle-12
+if: {$wrapper.subtitle-12 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-12 != NULL}
+link: $wrapper.link-12
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.row: 
+height: fill-container
+width: fill-container
+spacing.fixed.px: 20
+align-content: center
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.heading-1
+if: {$wrapper.heading-1 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+text-align: center
+padding-bottom.px: 10
+style: bold
+
+-- ftd.text: $wrapper.subtitle-1
+if: {$wrapper.subtitle-1 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-1 != NULL}
+link: $wrapper.link-1
+
+-- ftd.text: $wrapper.subtitle-2
+if: {$wrapper.subtitle-2 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-2 != NULL}
+link: $wrapper.link-2
+
+-- ftd.text: $wrapper.subtitle-3
+if: {$wrapper.subtitle-3 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-3 != NULL}
+link: $wrapper.link-3
+
+-- ftd.text: $wrapper.subtitle-4
+if: {$wrapper.subtitle-4 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-4 != NULL}
+link: $wrapper.link-4
+
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.heading-2
+if: {$wrapper.heading-2 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+text-align: center
+padding-bottom.px: 10
+style: bold
+
+-- ftd.text: $wrapper.subtitle-5
+if: {$wrapper.subtitle-5 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-5 != NULL}
+link: $wrapper.link-5
+
+-- ftd.text: $wrapper.subtitle-6
+if: {$wrapper.subtitle-6 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-6 != NULL}
+link: $wrapper.link-6
+
+-- ftd.text: $wrapper.subtitle-7
+if: {$wrapper.subtitle-7 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-7 != NULL}
+link: $wrapper.link-7
+
+-- ftd.text: $wrapper.subtitle-8
+if: {$wrapper.subtitle-8 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-8 != NULL}
+link: $wrapper.link-8
+
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: $wrapper.heading-3
+if: {$wrapper.heading-3 != NULL}
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+text-align: center
+padding-bottom.px: 10
+style: bold
+
+-- ftd.text: $wrapper.subtitle-9
+if: {$wrapper.subtitle-9 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-9 != NULL}
+link: $wrapper.link-9
+
+-- ftd.text: $wrapper.subtitle-10
+if: {$wrapper.subtitle-10 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-10 != NULL}
+link: $wrapper.link-10
+
+-- ftd.text: $wrapper.subtitle-11
+if: {$wrapper.subtitle-11 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-11 != NULL}
+link: $wrapper.link-11
+
+-- ftd.text: $wrapper.subtitle-12
+if: {$wrapper.subtitle-12 != NULL}
+cursor: pointer
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+if: {$wrapper.link-12 != NULL}
+link: $wrapper.link-12
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.mobile
+
+;;--------------------------Copywrite--------------------------
+-- ftd.text: $wrapper.copywrite
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+width: fill-container
+text-align: center
+
+;;-------------------------Powered by------------------
+-- ftd.text: Powered by `fastn` - If you can write, you can code
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-small
+width: fill-container
+text-align: center
+
+-- end: ftd.column
+
+;;---------------------END OF FOOTER COLUMN---------------------
+
+-- end: wrapper
