@@ -4,7 +4,7 @@
 -- component wrapper:
 caption title:
 optional body subtitle:
-ftd.image-src image:
+;;ftd.image-src image:
 
 -- ftd.container:
 ;; id: about
@@ -42,11 +42,11 @@ color: $inherited.colors.text-strong
 
 -- end: ftd.column
 
--- ftd.image:
-src: $wrapper.image
-height.fixed.px: 380
-width.fixed.px: 380
-classes: wow, fadeInRight
+;;-- ftd.image:
+;;src: $wrapper.image
+;;height.fixed.px: 380
+;;width.fixed.px: 380
+;;classes: wow, fadeInRight
 
 -- end: ftd.row
 
@@ -79,11 +79,11 @@ width: fill-container
 ;; color: #000000
 color: $inherited.colors.text-strong
 
--- ftd.image:
-src: $wrapper.image
-margin-top.px: 30
-height.fixed.px: 300
-width.fixed.px: 300
+;;-- ftd.image:
+;;src: $wrapper.image
+;;margin-top.px: 30
+;;height.fixed.px: 300
+;;width.fixed.px: 300
 
 -- end: ftd.column
 

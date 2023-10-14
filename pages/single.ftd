@@ -1,11 +1,10 @@
--- import: rutukapate.github.io/fastn-blog/components/navbar
-;;-- import: rutukapate.github.io/fastn-blog/components/footer
+-- import: rutukapate.github.io/fastn-blog/common/navbar
+-- import: rutukapate.github.io/fastn-blog/common/footer
 ;;-- import: rutukapate.github.io/fastn-project-1/sections/contact-page
-;;-- import: rutukapate.github.io/fastn-project-1/utils/animation
-;;-- import: fastn-community.github.io/dark-mode-switcher as dms
+-- import: rutukapate.github.io/fastn-project-1/utils/animation
+-- import: fastn-community.github.io/dark-mode-switcher as dms
 
 -- ds.page:
 
--- single-page.wrapper:
 
 -- end: ds.page
