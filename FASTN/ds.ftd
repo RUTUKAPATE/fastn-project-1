@@ -35,9 +35,9 @@ z-index: -1
 
 -- navbar.wrapper:
 title: Architecture
-title-link: /index
+title-link: /fastn-project-1
 navlink-1: Portfolio
-link-1: /pages/all-portfolio
+link-1: /fastn-project-1/pages/all-portfolio
 navlink-2: Single
 link-2: /
 dropdown: Dropdown

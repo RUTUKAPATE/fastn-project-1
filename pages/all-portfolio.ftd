@@ -36,19 +36,19 @@ spacing: space-around
 img: $assets.files.assets.architect1.jpg
 title: Dublin Arena Architect Project
 description: You can use it as a standalone website or integrate it with your existing website.
-page-link: /pages/portfolio-page-1
+page-link: /fastn-project-1/pages/portfolio-page-1
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect2.jpg
 title: Dublin Arena Architect Project
 description: Everything is on us, you don't have to worry about anything.
-page-link: /pages/portfolio-page-2
+page-link: /fastn-project-1/pages/portfolio-page-2
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect3.jpg
 title: Dublin Arena Architect Project
 description: You can customize it to your liking and make it your own.
-page-link: /pages/portfolio-page-3
+page-link: /fastn-project-1/pages/portfolio-page-3
 
 -- end: ftd.row
 
@@ -61,19 +61,19 @@ spacing: space-around
 img: $assets.files.assets.architect4.jpg
 title: Dublin Arena Architect Project
 description: You can use it as a standalone website or integrate it with your existing website.
-page-link: /pages/portfolio-page-4
+page-link: /fastn-project-1/pages/portfolio-page-4
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect5.jpg
 title: Dublin Arena Architect Project
 description: Everything is on us, you don't have to worry about anything.
-page-link: /pages/portfolio-page-5
+page-link: /fastn-project-1/pages/portfolio-page-5
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect6.jpg
 title: Dublin Arena Architect Project
 description: You can customize it to your liking and make it your own.
-page-link: /pages/portfolio-page-6
+page-link: /fastn-project-1/pages/portfolio-page-6
 
 -- end: ftd.row
 
@@ -86,19 +86,19 @@ spacing: space-around
 img: $assets.files.assets.architect7.jpg
 title: Dublin Arena Architect Project
 description: You can use it as a standalone website or integrate it with your existing website.
-page-link: /pages/portfolio-page-7
+page-link: /fastn-project-1/pages/portfolio-page-7
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect8.jpg
 title: Dublin Arena Architect Project
 description: Everything is on us, you don't have to worry about anything.
-page-link: /pages/portfolio-page-8
+page-link: /fastn-project-1/pages/portfolio-page-8
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect9.jpg
 title: Dublin Arena Architect Project
 description: You can customize it to your liking and make it your own.
-page-link: /pages/portfolio-page-9
+page-link: /fastn-project-1/pages/portfolio-page-9
 
 -- end: ftd.row
 
@@ -132,55 +132,55 @@ align-content: center
 img: $assets.files.assets.architect1.jpg
 title: Dublin Arena Architect Project
 description: You can use it as a standalone website or integrate it with your existing website.
-page-link: /pages/portfolio-page-1
+page-link: /fastn-project-1/pages/portfolio-page-1
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect2.jpg
 title: Dublin Arena Architect Project
 description: Everything is on us, you don't have to worry about anything.
-page-link: /pages/portfolio-page-2
+page-link: /fastn-project-1/pages/portfolio-page-2
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect3.jpg
 title: Dublin Arena Architect Project
 description: You can customize it to your liking and make it your own.
-page-link: /pages/portfolio-page-3
+page-link: /fastn-project-1/pages/portfolio-page-3
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect4.jpg
 title: Dublin Arena Architect Project
 description: You can use it as a standalone website or integrate it with your existing website.
-page-link: /pages/portfolio-page-4
+page-link: /fastn-project-1/pages/portfolio-page-4
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect5.jpg
 title: Dublin Arena Architect Project
 description: Everything is on us, you don't have to worry about anything.
-page-link: /pages/portfolio-page-5
+page-link: /fastn-project-1/pages/portfolio-page-5
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect6.jpg
 title: Dublin Arena Architect Project
 description: You can customize it to your liking and make it your own.
-page-link: /pages/portfolio-page-6
+page-link: /fastn-project-1/pages/portfolio-page-6
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect7.jpg
 title: Dublin Arena Architect Project
 description: You can use it as a standalone website or integrate it with your existing website.
-page-link: /pages/portfolio-page-7
+page-link: /fastn-project-1/pages/portfolio-page-7
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect8.jpg
 title: Dublin Arena Architect Project
 description: Everything is on us, you don't have to worry about anything.
-page-link: /pages/portfolio-page-8
+page-link: /fastn-project-1/pages/portfolio-page-8
 
 -- portfolio-cards.wrapper:
 img: $assets.files.assets.architect9.jpg
 title: Dublin Arena Architect Project
 description: You can customize it to your liking and make it your own.
-page-link: /pages/portfolio-page-9
+page-link: /fastn-project-1/pages/portfolio-page-9
 
 -- end: ftd.column
 
