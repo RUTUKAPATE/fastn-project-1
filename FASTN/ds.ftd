@@ -37,7 +37,7 @@ z-index: -1
 title: Architecture
 title-link: /
 navlink-1: Portfolio
-link-1: /pages/portfolio
+link-1: /fastn-project-1/pages/portfolio
 navlink-2: Single
 link-2: /
 dropdown: Dropdown
@@ -49,8 +49,6 @@ sub-navlink-3: Item-3
 sublink-3: /
 sub-navlink-4: Item-4
 sublink-4: /
-sub-navlink-5: Item-5
-sublink-5: /
 navlink-3: Contact
 link-3: /
 theme: light
