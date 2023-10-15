@@ -225,13 +225,13 @@ padding.px: 40
 
 ;;----------------------------Hamburger menu------------------------
 -- ftd.image:
-src if {wrapper.theme == "light"}: $assets.files.assets.black-hamburger.svg
-src: $assets.files.assets.white-hamburger.svg
-height.fixed.px: 40
-width.fixed.px: 40
+src if {wrapper.theme == "light"}: $assets.files.assets.logo.png
+src: $assets.files.assets.logo.png
+height.fixed.px: 80
+width.fixed.px: 80
 cursor: pointer
 anchor.id: mobile-nav
-top.px: 40
+top.px: 20
 left.px: 25
 $on-click$: $ftd.toggle($a = $wrapper.on-click)
 
