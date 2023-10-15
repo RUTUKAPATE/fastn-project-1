@@ -1,6 +1,7 @@
 -- import: fastn-community.github.io/dark-mode-switcher as dms
 -- import: rutukapate.github.io/fastn-project-1/common/navbar
 -- import: rutukapate.github.io/fastn-project-1/common/footer
+-- import: rutukapate.github.io/fastn-project-1/pages/portfolio
 -- import: rutukapate.github.io/fastn-project-1/utils/animation
 -- import: rutukapate.github.io/Caveat-Typography
 
@@ -36,7 +37,7 @@ z-index: -1
 title: Architecture
 title-link: /
 navlink-1: Portfolio
-link-1: /
+link-1: /pages/portfolio
 navlink-2: Single
 link-2: /
 dropdown: Dropdown
@@ -58,6 +59,7 @@ theme: light
 width: fill-container
 height: fill-container
 children: $page.uis
+margin-bottom.px: 200
 
 -- end: ftd.column
 
