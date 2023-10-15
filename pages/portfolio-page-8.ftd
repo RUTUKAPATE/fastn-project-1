@@ -1,0 +1,20 @@
+-- import: rutukapate.github.io/fastn-project-1/utils/animation
+-- import: rutukapate.github.io/fastn-project-1/components/portfolio
+
+-- ds.page:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+align-content: center
+padding-horizontal.px: 80
+
+-- portfolio.wrapper: 
+img: $assets.files.assets.architect8.jpg
+title: Dublin Arena Architect Project
+description: You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website. You can use it as a standalone website or integrate it with your existing website.
+
+-- end: ftd.column
+
+-- end: ds.page
+

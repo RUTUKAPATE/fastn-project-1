@@ -1,0 +1,97 @@
+-- component wrapper:
+optional ftd.image-src img:
+string title:
+string description:
+
+-- ftd.container:
+
+-- ftd.desktop:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+spacing.fixed.px: 20
+align-content: center
+margin-vertical.px: 50
+
+-- ftd.text: $wrapper.title
+role: $inherited.types.heading-large
+width: fill-container
+color: $inherited.colors.text-strong
+text-align: center
+classes: wow, fadeInDown
+
+-- ftd.container:
+width: fill-container
+margin-vertical.px: 50
+classes: wow, fadeInUp
+
+-- ftd.row:
+height: hug-content
+width: fill-container
+spacing.fixed.px: 50
+
+-- ftd.image:
+if: { $wrapper.img != NULL }
+fit: cover
+src: $wrapper.img
+height: fill-container
+width: fill-container
+border-radius.px: 10
+
+-- ftd.text: $wrapper.description
+role: $inherited.types.heading-small 
+width: fill-container
+height: fill-container
+
+-- end: ftd.row
+
+-- end: ftd.container
+
+-- end: ftd.column
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+spacing.fixed.px: 20
+align-content: center
+margin-vertical.px: 30
+
+-- ftd.text: $wrapper.title
+role: $inherited.types.heading-large
+width: fill-container
+color: $inherited.colors.text-strong
+text-align: center
+classes: wow, fadeInDown
+
+-- ftd.container:
+width: fill-container
+margin-vertical.px: 50
+classes: wow, fadeInUp
+
+-- ftd.image:
+if: { $wrapper.img != NULL }
+fit: cover
+src: $wrapper.img
+height: hug-content
+width: fill-container
+border-radius.px: 10
+
+-- ftd.text: $wrapper.description
+role: $inherited.types.heading-small 
+width: fill-container
+height: hug-content
+
+-- end: ftd.container
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.container
+
+-- end: wrapper

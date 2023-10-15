@@ -1,3 +1,4 @@
+
 -- ftd.shadow card-shadow:
 color: rgba(100, 100, 111, 0.2)
 x-offset.px: 0
@@ -8,6 +9,8 @@ blur.px: 10
 optional ftd.image-src img:
 string title:
 string description:
+string page-link:
+boolean $isHover: false
 
 -- ftd.column:
 classes: wow, fadeInUp
@@ -30,17 +33,24 @@ spacing.fixed.px: 10
 cursor: pointer
 
 -- ftd.image:
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
 if: { $wrapper.img != NULL }
 fit: cover
 src: $wrapper.img
 height: fill-container
 width: fill-container
+link: $wrapper.page-link 
+
+-- ftd.column:
+if: { wrapper.isHover }
 
 -- ftd.text: $wrapper.title
 role: $inherited.types.heading-tiny
 style: bold
 width: fill-container
 classes: wow, flash
+if: { $wrapper.page-link != NULL }
 
 -- ftd.text: $wrapper.description
 role: $inherited.types.copy-regular 
@@ -52,4 +62,7 @@ width: fill-container
 
 -- end: ftd.column
 
+-- end: ftd.column
+
 -- end: wrapper
+
