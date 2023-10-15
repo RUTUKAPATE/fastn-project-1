@@ -1,0 +1,107 @@
+-- import: rutukapate.github.io/fastn-project-1/components/portfolio-cards
+-- import: rutukapate.github.io/fastn-project-1/utils/animation
+
+-- ds.page:
+
+-- ftd.container:
+id: features
+height: fill-container
+width: fill-container
+
+-- ftd.desktop:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+margin-vertical.px: 50
+padding-horizontal.px: 80
+;; background.solid: #f3f4fd
+spacing.fixed.px: 100
+;; align-content: center
+
+-- ftd.text: Projects
+role: $inherited.types.heading-large
+width: fill-container
+color: $inherited.colors.text-strong
+text-align: center
+classes: wow, fadeInDown
+
+-- ftd.row:
+height: fill-container
+width: fill-container
+spacing: space-around
+
+
+-- portfolio-cards.wrapper:
+img: $assets.files.assets.architect1.jpg
+title: Dublin Arena Architect Project
+description: You can use it as a standalone website or integrate it with your existing website.
+
+-- portfolio-cards.wrapper:
+img: $assets.files.assets.architect2.jpg
+title: Dublin Arena Architect Project
+description: Everything is on us, you don't have to worry about anything.
+
+-- portfolio-cards.wrapper:
+img: $assets.files.assets.architect3.webp
+title: Dublin Arena Architect Project
+description: You can customize it to your liking and make it your own.
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+margin-vertical.px: 100
+padding-horizontal.px: 20
+;; background.solid: #f3f4fd
+spacing.fixed.px: 40
+;; align-content: center
+
+-- ftd.text: Projects
+role: $inherited.types.heading-large
+width: fill-container
+color: $inherited.colors.text-strong
+text-align: center
+classes: wow, fadeInDown
+
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+spacing: space-around
+align-content: center
+
+
+-- portfolio-cards.wrapper:
+img: $assets.files.assets.architect1.jpg
+title: Dublin Arena Architect Project
+description: You can use it as a standalone website or integrate it with your existing website.
+
+-- portfolio-cards.wrapper:
+img: $assets.files.assets.architect2.jpg
+title: Dublin Arena Architect Project
+description: Everything is on us, you don't have to worry about anything.
+
+-- portfolio-cards.wrapper:
+img: $assets.files.assets.architect3.webp
+title: Dublin Arena Architect Project
+description: You can customize it to your liking and make it your own.
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.container
+
+-- end: ds.page
