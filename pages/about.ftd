@@ -1,11 +1,10 @@
 -- import: rutukapate.github.io/fastn-project-1/sections/about-page
+-- import: rutukapate.github.io/fastn-project-1/utils/animation
 
 -- ds.page:
 
--- about-page.wrapper: Who are we?
-;;image: $assets.files.assets.sitting.png
-
-We are a small team of developers who are passionate about AI and ML. We are
-working on some projects which will help the lifestyle of people.
+-- about-page.wrapper: About Us
+subtitle: Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail.
+details: Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables. 
 
 -- end: ds.page

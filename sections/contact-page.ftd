@@ -1,5 +1,4 @@
-;;-- import: rutukapate.github.io/fastn-project-1/components/feature-card
-
+-- import: rutukapate.github.io/fastn-project-1/utils/animation
 
 -- ftd.shadow text-input-shadow: 
 color: rgba(0,0,0,0.1)
@@ -7,37 +6,109 @@ x-offset.px: 0
 y-offset.px: 4
 blur.px: 12
 
-
 -- component wrapper:
 caption title:
+string subtitle:
+optional string email-address:
+optional string location:
+optional string phone-number:
+optional string site-url:
 optional string $name:
 optional string $email:
 optional string $contact:
 optional string $message:
 boolean $on-click:
-
+boolean $isHover: false
 
 -- ftd.column:
 width: fill-container
 margin-vertical.px: 50
 padding-horizontal.px: 20
-;; spacing.fixed.px: 32
 align-content: center
-classes: wow, fadeInUp
-
 
 -- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
 width: fill-container
-color: #4031AA
+color: $inherited.colors.text-strong
 text-align: center
 margin-bottom.px: 32
+classes: wow, fadeInDown
+
+-- ftd.desktop:
+
+-- ftd.row:
+spacing.fixed.px: 100
+
+-- ftd.column:
+spacing.fixed.px: 30
+classes: wow, fadeInLeft
+
+-- ftd.text: $wrapper.subtitle
+role: $inherited.types.heading-small
+width: fill-container
+color: $inherited.colors.text-strong
+margin-bottom.px: 32
+style: bold
+
+-- ftd.row:
+spacing.fixed.px: 10
+margin-bottom.px: 10
+
+-- ftd.image: $assets.files.assets.location.svg
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: $wrapper.location
+if: { $wrapper.location != NULL }
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 10
+margin-bottom.px: 10
+
+-- ftd.image: $assets.files.assets.phone-call.svg
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: $wrapper.phone-number
+if: { $wrapper.phone-number != NULL }
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 10
+margin-bottom.px: 10
+
+-- ftd.image: $assets.files.assets.email.svg
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: $wrapper.email-address
+if: { $wrapper.email-address != NULL }
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 10
+margin-bottom.px: 10
+
+-- ftd.image: $assets.files.assets.internet.svg
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: $wrapper.site-url
+if: { $wrapper.site-url != NULL }
+
+-- end: ftd.row
+
+-- end: ftd.column
 
 ;; Form
 -- ftd.column:
 width: fill-container
 align-content: center
-
+classes: wow, fadeInRight
 
 ;; Name
 -- ftd.text-input:
@@ -100,7 +171,7 @@ role: $inherited.types.source-code
 ;; Button
 -- ftd.column:
 margin-bottom.px: 20
-background.solid: #0D6EFD
+;;background.solid: #0D6EFD
 height.fixed.px: 40
 padding-horizontal.px: 16
 padding-vertical.px: 8
@@ -111,6 +182,9 @@ border-radius.px: 6
 align-content: center
 cursor: pointer
 $on-click$: $ftd.toggle($a = $wrapper.on-click)
+background.solid if {$wrapper.isHover}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
 
 -- ftd.text: Submit
 color: white
@@ -123,7 +197,175 @@ role: $inherited.types.source-code
 -- end: ftd.column
 ;; END OF FORM
 
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.column:
+spacing.fixed.px: 100
+
+;; Form
+-- ftd.column:
+width: fill-container
+align-content: center
+classes: wow, fadeInRight
+
+;; Name
+-- ftd.text-input:
+margin-bottom.px: 20
+placeholder: Name
+padding-horizontal.px: 16
+padding-vertical.px: 8
+height.fixed.px: 40
+width: fill-container
+max-width.fixed.px: 600
+shadow: $text-input-shadow
+border-radius.px: 6
+$on-input$: $ftd.set-string($a = $wrapper.name, v = $VALUE)
+role: $inherited.types.source-code
+
+;; Email
+-- ftd.text-input:
+margin-bottom.px: 20
+placeholder: Email
+type: email
+padding-horizontal.px: 16
+padding-vertical.px: 8
+height.fixed.px: 40
+width: fill-container
+max-width.fixed.px: 600
+shadow: $text-input-shadow
+border-radius.px: 6
+$on-input$: $ftd.set-string($a = $wrapper.email, v = $VALUE)
+role: $inherited.types.source-code
+
+;; Phone number
+-- ftd.text-input:
+margin-bottom.px: 20
+placeholder: Phone number
+padding-horizontal.px: 16
+padding-vertical.px: 8
+height.fixed.px: 40
+width: fill-container
+max-width.fixed.px: 600
+shadow: $text-input-shadow
+border-radius.px: 6
+$on-input$: $ftd.set-string($a = $wrapper.contact, v = $VALUE)
+role: $inherited.types.source-code
+
+;; Message
+-- ftd.text-input:
+margin-bottom.px: 20
+placeholder: Message
+multiline: true
+padding-horizontal.px: 16
+padding-vertical.px: 8
+height.fixed.px: 100
+width: fill-container
+max-width.fixed.px: 600
+shadow: $text-input-shadow
+border-radius.px: 6
+$on-input$: $ftd.set-string($a = $wrapper.message, v = $VALUE)
+role: $inherited.types.source-code
+
+;; Button
+-- ftd.column:
+margin-bottom.px: 20
+height.fixed.px: 40
+padding-horizontal.px: 16
+padding-vertical.px: 8
+width: fill-container
+max-width.fixed.px: 600
+shadow: $text-input-shadow
+border-radius.px: 6
+align-content: center
+cursor: pointer
+$on-click$: $ftd.toggle($a = $wrapper.on-click)
+background.solid if {$wrapper.isHover}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $wrapper.isHover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wrapper.isHover, v = false)
+
+-- ftd.text: Submit
+color: white
+role: $inherited.types.source-code
+
+-- end: ftd.column
+;; END OF BUTTON
+
+-- end: ftd.column
+;; END OF FORM
+
+-- ftd.column:
+spacing.fixed.px: 30
+classes: wow, fadeInLeft
+
+-- ftd.text: $wrapper.subtitle
+role: $inherited.types.heading-small
+width: fill-container
+color: $inherited.colors.text-strong
+margin-bottom.px: 32
+style: bold
+
+-- ftd.row:
+spacing.fixed.px: 10
+margin-bottom.px: 10
+
+-- ftd.image: $assets.files.assets.location.svg
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: $wrapper.location
+if: { $wrapper.location != NULL }
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 10
+margin-bottom.px: 10
+
+-- ftd.image: $assets.files.assets.phone-call.svg
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: $wrapper.phone-number
+if: { $wrapper.phone-number != NULL }
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 10
+margin-bottom.px: 10
+
+-- ftd.image: $assets.files.assets.email.svg
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: $wrapper.email-address
+if: { $wrapper.email-address != NULL }
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 10
+margin-bottom.px: 10
+
+-- ftd.image: $assets.files.assets.internet.svg
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: $wrapper.site-url
+if: { $wrapper.site-url != NULL }
+
+-- end: ftd.row
+
 -- end: ftd.column
 
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
 
 -- end: wrapper
