@@ -1,9 +1,5 @@
--- import: rutukapate.github.io/fastn-blog/common/navbar
--- import: rutukapate.github.io/fastn-blog/common/footer
 -- import: rutukapate.github.io/fastn-project-1/sections/contact-page
 -- import: rutukapate.github.io/fastn-project-1/utils/animation
--- import: fastn-community.github.io/dark-mode-switcher as dms
-
 
 -- optional string $name:
 -- optional string $email:
@@ -13,17 +9,23 @@
 
 -- ds.page:
 
--- ftd.text: It was a demo form so the data is not stored anywhere. If you want to contact us then you can mail us at rutuja16kapate@gmail.com
+-- ftd.text: It was a demo contact page so the data is not stored anywhere. If you want to contact us then you can mail us at rutuja16kapate@gmail.com
 if: { on-click }
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
 height.fixed.vh: 100
 width: fill-container
 text-align: center
+margin-vertical.px: 100
 
 -- contact-page.wrapper:
 if: { !on-click }
-title: Let's have a talk
+title: Contact Us
+subtitle: Contact Information
+location: 198 West 21th Street, Suite 721 New York NY 10016
+email-address: info@yoursite.com
+phone-number: +1235 2355 98
+site-url: www.yoursite.com
 $name: $name
 $email: $email
 $contact: $contact

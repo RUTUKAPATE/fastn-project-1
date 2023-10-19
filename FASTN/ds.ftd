@@ -2,6 +2,12 @@
 -- import: rutukapate.github.io/fastn-project-1/common/navbar
 -- import: rutukapate.github.io/fastn-project-1/common/footer
 -- import: rutukapate.github.io/fastn-project-1/pages/all-portfolio
+-- import: rutukapate.github.io/fastn-project-1/pages/about
+-- import: rutukapate.github.io/fastn-project-1/pages/contact
+-- import: rutukapate.github.io/fastn-project-1/sections/infrastructure
+-- import: rutukapate.github.io/fastn-project-1/sections/engineering
+-- import: rutukapate.github.io/fastn-project-1/sections/development
+-- import: rutukapate.github.io/fastn-project-1/sections/design
 -- import: rutukapate.github.io/fastn-project-1/utils/animation
 -- import: rutukapate.github.io/Caveat-Typography
 
@@ -39,18 +45,18 @@ title-link: /fastn-project-1
 navlink-1: Portfolio
 link-1: /fastn-project-1/pages/all-portfolio
 navlink-2: Single
-link-2: /
+link-2: /fastn-project-1/pages/about
 dropdown: Dropdown
-sub-navlink-1: Item-1
-sublink-1: /
-sub-navlink-2: Item-2
-sublink-2: /
-sub-navlink-3: Item-3
-sublink-3: /
-sub-navlink-4: Item-4
-sublink-4: /
+sub-navlink-1: Infrastructure
+sublink-1: /fastn-project-1/sections/infrastructure
+sub-navlink-2: Design
+sublink-2: /fastn-project-1/sections/design
+sub-navlink-3: Development
+sublink-3: /fastn-project-1/sections/development
+sub-navlink-4: Engineering
+sublink-4: /fastn-project-1/sections/engineering
 navlink-3: Contact
-link-3: /
+link-3: /fastn-project-1/pages/contact
 theme: light
 
 -- ftd.column:
